@@ -1,1 +1,257 @@
-header {background-color: #EAC926;}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.texto-logo-barra {text-align: center;}
+
+.burger-menu {text-align: center;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+body{font-family: 'Roboto';
+font-size: 12px;
+width: 100%;
+}
+
+
+.search1{font-size: 12px;}
+
+
+.primero{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.primero > .precios{
+    
+    font-size: 18px;
+    width: 30%;
+}
+
+.primero > .descuentos{
+    
+    font-size: 18px;
+    width: 70%;
+}
+
+.primero > .descripciones{
+    
+    font-size: 18px;
+    width: 30%;
+}
+
+.primero > .descuentos1{
+    
+    font-size: 16px;
+    width: 70%;
+}
+.articulo-uno{
+    display: flex;
+}
+
+.articulo-dos,.articulo-tres,.articulo-cuatro{
+    display: none;
+}
+
+.descripciones1 {display: none;}
+.precios1 {display: none;}
+
+h2 {font-size: 24px;
+color: rgb(100, 100, 100);}
+
+p{font-size: 12px;}
+
+footer{text-align: center;
+margin-bottom: 10px;
+background-color: white;}
+
+.navbar{display: none;}
+
+.navbar__item{font-size: 12px;}
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    text-align: center;
+    background-color: #ebebeb;;
+}
+
+article{padding-bottom: 10px;}
+
+header{background-color: #EAC926;
+}
+
+.caja-articulo{border-top: 1px solid #ebebeb;
+    border-spacing: 15px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.caja-articulo > .icono-truck{
+    display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: relative;
+right: -245px;
+top: -30px;
+}
+
+.logo-barra{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.logo-barra >.logo-mercado-liebre{
+    width: 50%;
+    padding: 10px;
+}
+.logo-barra > .barrabusqueda{
+    width: 50%;
+    padding-top: 12px;
+
+}
+
+.inputdebarra > input{
+    padding: 8px;
+    outline: none;
+}
+.inputdebarra > i{
+    position: absolute;
+    margin-left: 148px;
+    top: 20px;
+    font-size: 12px;
+}
+
+@media (min-width: 361px){
+    /* Tablets */
+    body{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        .descripciones1 {font-size: 16px; display: flex };
+        .precios1{font-size: 18px; display: flex;}
+        
+        
+    }
+    header{
+        .burger-menu{display: none;}
+        .navbar{display: flex;}
+        
+        .container-logo-barra-texto{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .container-logo-barra-texto > .logo-barra{
+            width: 60%;
+        }
+
+        .container-logo-barra-texto > .logo-mercado-liebre, .barrabusqueda, .texto-logo-barra{
+            flex-grow: 0;
+            padding-top: 25px;
+        }
+
+        .navbar-items{
+            display: inline-flex;
+        }
+        .navbar-items1{
+            padding-left: 10px;
+        }
+        .navbar-items > .navbar-items2{
+            padding-left: 100px;
+        }
+        .navbar-items > .navbar-items1 > .navbar__item{
+            display: inline-flex;
+            padding: 5px;
+        }
+        .navbar-items > .navbar-items2>.navbar__item{
+            display: inline-flex;
+            padding: 5px;
+        }
+
+        
+    }
+    main{
+        .articulo-dos{
+            display: flex;
+        }
+       .dos-cajas{
+            display: flex;
+        }
+        .dos-cajas > .articulo-dos{
+            padding-top: 30px;
+            padding-left: 50px;
+        }
+        .dos-cajas1{
+            display: flex;
+        }
+        .dos-cajas1 > .articulo-dos{
+            padding-left: 50px;
+        }
+}
+
+@media (min-width: 769px){
+    /* Desktop */
+    body{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        .descripciones1 {
+            font-size: 16px; 
+            display: flex;
+        }
+        .precios1{
+            font-size: 18px; 
+            display: flex;
+        }
+        
+    }
+    header{
+        .burger-menu{display: none;}
+        .navbar{display: flex;}
+        .container-logo-barra-texto{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .container-logo-barra-texto > .logo-barra{
+            width: 60%;
+        }
+
+        .container-logo-barra-texto > .logo-mercado-liebre, .barrabusqueda, .texto-logo-barra{
+            flex-grow: 0;
+        }
+        .navbar-items{
+            display: inline-flex;
+        }
+        .navbar-items1{
+            padding-left: 10px;
+        }
+        .navbar-items > .navbar-items2{
+            padding-left: 400px;
+        }
+        .navbar-items > .navbar-items1 > .navbar__item{
+            display: inline-flex;
+            padding: 5px;
+        }
+        .navbar-items > .navbar-items2>.navbar__item{
+            display: inline-flex;
+            padding: 5px;
+        }
+        
+    }
+    main{
+        .articulo-dos, .articulo-tres, .articulo-cuatro{
+            display: flex;
+        }
+        margin: auto;
+}
+}
+}
