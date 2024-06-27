@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.imagen-product{
+    width: 300px;
+    padding: 10px;
+}
 
 .texto-logo-barra {text-align: center;}
 
@@ -24,7 +28,6 @@ width: 100%;
 
 .primero{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -59,8 +62,8 @@ width: 100%;
     display: none;
 }
 
-.descripciones1 {display: none;}
-.precios1 {display: none;}
+.descripciones1 {visibility: hidden;}
+.precios1 {visibility: hidden;}
 
 h2 {font-size: 24px;
 color: rgb(100, 100, 100);}
@@ -88,10 +91,24 @@ article{padding-bottom: 10px;}
 header{background-color: #EAC926;
 }
 
-.caja-articulo{border-top: 1px solid #ebebeb;
+.caja-articulo{
+    border-top: 1px solid #ebebeb;
     border-spacing: 15px;
+    transition: all 0.5;
+    
+}
+.caja-articulo:hover{
+    .precios1{
+        font-size: 16px;
+        visibility: visible;
+    }
+    .descripciones1{
+        font-size: 16px;
+        visibility: visible;
+    }
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
+
 .caja-articulo > .icono-truck{
     display: block;
 font-size: 16px;
@@ -104,6 +121,10 @@ border-radius: 50%;
 position: relative;
 right: -245px;
 top: -30px;
+transition: all 0.5s;
+}
+.caja-articulo > .icono-truck:hover{
+    transform: rotate(-90deg);
 }
 
 .logo-barra{
@@ -113,12 +134,12 @@ top: -30px;
 }
 
 .logo-barra >.logo-mercado-liebre{
-    width: 50%;
+    width: 49%;
     padding: 10px;
 }
 .logo-barra > .barrabusqueda{
-    width: 50%;
-    padding-top: 12px;
+    width: 49%;
+    
 
 }
 
@@ -129,16 +150,46 @@ top: -30px;
 .inputdebarra > i{
     position: absolute;
     margin-left: 148px;
-    top: 20px;
+    top: 10px;
     font-size: 12px;
 }
+
+.caja-footer{
+    display: flex;
+    justify-content: space-around;
+}
+.caja-articulo > section{
+    padding: 5px;
+}
+
+.caja-footer > section > i{
+    color: #1259c3; 
+    font-size: 2em; 
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+.caja-footer > section > i:hover{
+    color: black;
+}
+
 
 @media (min-width: 361px){
     /* Tablets */
     body{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        .descripciones1 {font-size: 16px; display: flex };
-        .precios1{font-size: 18px; display: flex;}
+      
+.descripciones1:hover{
+    visibility: visible;
+}
+        .precios1{
+            font-size: 16px;
+            display: flex;
+            visibility: hidden;
+            transition: all 0.5s;
+        }
+        .precios1:hover{
+            visibility: visible;
+        }
         
         
     }
@@ -172,12 +223,25 @@ top: -30px;
         .navbar-items > .navbar-items1 > .navbar__item{
             display: inline-flex;
             padding: 5px;
+            
         }
         .navbar-items > .navbar-items2>.navbar__item{
             display: inline-flex;
             padding: 5px;
         }
-
+        .inputdebarra > i{
+            position: absolute;
+            margin-left: 148px;
+            top: 35px;
+            font-size: 12px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(100, 100, 100);
+        }
         
     }
     main{
@@ -186,16 +250,11 @@ top: -30px;
         }
        .dos-cajas{
             display: flex;
-        }
-        .dos-cajas > .articulo-dos{
-            padding-top: 30px;
-            padding-left: 50px;
+            justify-content: space-around;
         }
         .dos-cajas1{
             display: flex;
-        }
-        .dos-cajas1 > .articulo-dos{
-            padding-left: 50px;
+            justify-content: space-around;
         }
 }
 
@@ -208,10 +267,10 @@ top: -30px;
             display: flex;
         }
         .precios1{
-            font-size: 18px; 
+            font-size: 18px;
             display: flex;
         }
-        
+
     }
     header{
         .burger-menu{display: none;}
@@ -252,6 +311,9 @@ top: -30px;
             display: flex;
         }
         margin: auto;
+        .cuatro-cajas{
+            display: flex;
+        }
 }
 }
 }

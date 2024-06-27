@@ -17,11 +17,11 @@
     <header class="header1">
         <div class="container-logo-barra-texto">
         <div class="logo-barra">
-    <img src="/images/logo-mercado-liebre.svg" alt="imagen de mercado liebre" class="logo-mercado-liebre">
+    <img src="/images/logo-mercado-liebre.svg" alt="imagen de mercado liebre" class="logo-mercado-liebre" onclick="location.href='/'">
     <div class="barrabusqueda">
         <form class="formulariodebarra" action="#" method="POST" >
                 <div class="inputdebarra">
-                    <i class="fa fa-search" style= "margin-bottom: 10px; padding: 2px;"></i>
+                    <i class="fa fa-search" ></i>
                     <input class="search1" type="search" placeholder="Buscar productos, marcas" >
                 </div>
         </form>
@@ -41,25 +41,25 @@
             </div>
 <br>
 <div class="navbar-items2">
-            <li class="navbar__item"><a href="register.html">Crea tu cuenta</a> <i class="fa-regular fa-id-card" style="color: #000000; padding: 1px;"></i></li>
-            <li class="navbar__item"><a href="#Ingresa">Ingresa</a> <i class="fa-solid fa-right-to-bracket" style="color: #000000;padding: 1px;"></i></li>
+            <li class="navbar__item"><a href="/register">Crea tu cuenta</a> <i class="fa-regular fa-id-card" style="color: #000000; padding: 1px;"></i></li>
+            <li class="navbar__item"><a href="/login">Ingresa</a> <i class="fa-solid fa-right-to-bracket" style="color: #000000;padding: 1px;"></i></li>
             <li class="navbar__item" class="navbar__item--opacity"><a href="#Miscompras">Mis Compras</a> <i class="fa-solid fa-basket-shopping" style="color: #000000;padding: 1px;"></i></li>
 </div>
         </ul>
     </nav>
         <div class="burger-menu">
-            <i class="fas fa-bars" style="background-color: #03264C; padding: 10px;"></i>
+            <i class="fas fa-bars" style="background-color: #1259c3;; padding: 10px;"></i>
         </div>
             <img src="/images/img-home-banner.jpg" alt="banner" width="100%">
     </header>
     <main>
-        <section>
+        <h2>Basado en tu última visita</h2>
+        <section class="cuatro-cajas">
             <div class="dos-cajas">
-            
             <article class="articulo-uno">
                 <div class="caja-articulo">
-            <h2>Basado en tu última visita</h2>
-            <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera moulinex" width="300"  style="padding: 10px;">
+            
+            <img class="imagen-product" src="/images/img-cafetera-moulinex.jpg" alt="cafetera moulinex">
             <div class="icono-truck">
   <i class="fa-solid fa-truck" style="color: #39b54a;"></i>
             </div>
@@ -73,7 +73,7 @@
             </article>
             <article class="articulo-dos">
                 <div class="caja-articulo">
-            <img src="/images/img-macbook-pro-2019.jpg" alt="MacBook" width="300" style="padding: 10px;">
+            <img class="imagen-product" src="/images/img-macbook-pro-2019.jpg" alt="MacBook" width="300" style="padding: 10px;">
   <br>
   <div class="icono-truck">
   <i class="fa-solid fa-truck" style="color: #39b54a;"></i>
@@ -90,7 +90,7 @@
             
             <article class="articulo-tres">
                 <div class="caja-articulo">
-                        <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung galaxy S10" width="300" style="padding: 10px;">
+                        <img class="imagen-product" src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung galaxy S10" width="300" style="padding: 10px;">
   <br>
   <div class="icono-truck">
   <i class="fa-solid fa-truck" style="color: #39b54a; "></i>
@@ -105,7 +105,7 @@
             </article>
             <article class="articulo-cuatro">
             <div class="caja-articulo">
-<img src="/images/img-tv-samsung-smart.jpg" alt="tv samusung smart" width="300" style="padding: 10px;" >
+<img class="imagen-product" src="/images/img-tv-samsung-smart.jpg" alt="tv samusung smart" width="300" style="padding: 10px;" >
   <br>
   <div class="icono-truck">
   <i class="fa-solid fa-truck" style="color: #39b54a; "></i>
@@ -120,8 +120,9 @@
             </article>
             
         </section>
-        <section id="Ofertas">
-            <h2 id="Ofertas">Ofertas</h2>
+        <h2 id="Ofertas">Ofertas</h2>
+        <section id="Ofertas" class="cuatro-cajas">
+            
             <div class="dos-cajas1">
             <article class="articulo-uno">
                 <div class="caja-articulo">
@@ -140,7 +141,7 @@
             </article>
             <article class="articulo-dos">
                 <div class="caja-articulo">
-            <img src="/images/img-macbook-pro-2019.jpg" alt="MacBook" width="300"
+            <img class="imagen-product" src="/images/img-macbook-pro-2019.jpg" alt="MacBook" width="300"
             style="padding: 10px;">
             <br>
             <div class="icono-truck">
@@ -157,7 +158,7 @@
             </div>
                       <article class="articulo-tres">
                         <div class="caja-articulo">
-                      <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung galaxy S10" width="300"
+                      <img class="imagen-product" src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung galaxy S10" width="300"
                       style="padding: 10px;">
                       <br>
                       <div class="icono-truck">
@@ -194,25 +195,28 @@
     </main>
     <br>
     <footer>
+        <div class="caja-footer">
         <section>
-            <i class="fa-solid fa-credit-card"  style="color: #1259c3; font-size: 2em; margin-bottom: 10px;" ></i>
+            <i class="fa-solid fa-credit-card"></i>
         <h4 class="descripciones">Pagá con tarjeta o en efectivo</h4>
         <p >Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. 
         ¡Y siempre es seguro!</p>
         </section>
         <section >
-            <i class="fa-solid fa-gift" style="color: #1259c3; font-size: 2em; margin-bottom: 10px;"></i>
+            <i class="fa-solid fa-gift"></i>
         <h4 class="descripciones">Envío gratis desde $ 2.500</h4>
         <p >Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de 
         productos. Es un beneficio de Mercado Puntos.</p>
         </section>
         <section >
-            <i class="fa-solid fa-user-shield" style="color: #1259c3; font-size: 2em; margin-bottom: 10px;"></i>
+            <i class="fa-solid fa-user-shield" ></i>
         <h4 class="descripciones">Seguridad, de principio a fin</h4>
         <p >¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,porque estás siempre
-        protegid@.
-        Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        protegid@.</p>
+        <br>
         </section>
+        </div>
+        <h5> © 1999-2020 MercadoLiebre S.R.L.</h5>
         </footer>
 </body>
 </html>
