@@ -129,7 +129,6 @@ transition: all 0.5s;
 
 .logo-barra{
     display: flex;
-    flex-direction: row;
     width: 100%;
 }
 
@@ -140,7 +139,6 @@ transition: all 0.5s;
 .logo-barra > .barrabusqueda{
     width: 49%;
     
-
 }
 
 .inputdebarra > input{
@@ -279,6 +277,12 @@ transition: all 0.5s;
             display: flex;
             flex-direction: row;
             width: 100%;
+        }
+        .search1{
+            width: 300px;
+        }
+        .inputdebarra > i{
+            margin-left: 280px;
         }
         .container-logo-barra-texto > .logo-barra{
             width: 60%;
