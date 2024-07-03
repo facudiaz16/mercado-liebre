@@ -58,12 +58,15 @@
         <form action="/" method="get" class="estilo-form">
             <label class="estilo-label" for="nombre">
             <input type="text" name="nombre" placeholder="Nombre y Apellido" minlength="3" maxlength="40" id="nombre" required>
+            <span class="error error-name">Este campo es obligatorio</span>
             </label>
             <label class="estilo-label" for="usuario">
             <input type="text" name="usuario" placeholder="Nombre de usuario" minlength="3" maxlength="15" id="usuario" required>
+            <span class="error error-Username">Este campo es obligatorio</span>
             </label>
             <label class="estilo-label" for="email">
             <input type="email" name="email" placeholder="E-mail" id="email"  required>
+            <span class="error error-email">Este campo es obligatorio</span>
             </label>
 
             <label class="estilo-label" for="fecha"><h3 class="texto-formulario">Fecha de nacimiento</h3>
@@ -71,6 +74,7 @@
             </label>
             <label class="estilo-label" for="domicilio">
             <input type="text" name="domicilio" placeholder="Domicilio" id="domicilio" required>
+            <span class="error error-domicilio">Este campo es obligatorio</span>
             </label>
             
             <label class="estilo-rc" for="perfil"><h3 class="texto-formulario">Perfil de usuario</h3>
@@ -94,9 +98,11 @@
             </label>
             <label class="estilo-label" for="contraseña">
                 <input type="password" name="contraseña" id="pass1" placeholder="Elige tu contraseña" required>
+                <span class="error error-contraseña">Este campo es obligatorio</span>
             </label>
             <label class="estilo-label" for="confirmar">
                 <input type="password" name="confirmar" id="pass2" placeholder="Confirmar tu contraseña" required>
+                <span class="error error-contraseña2">Este campo es obligatorio</span>
             </label>
             <br>
             <button class="boton" type="submit">Enviar</button>
@@ -133,7 +139,7 @@
         protegid@.</p>
         </section>
         </div>
-        <p> © 1999-2020 MercadoLiebre S.R.L.</p>
+        <h5 style="text-align: left;"> © 1999-2020 MercadoLiebre S.R.L.</h5>
         </footer>
 </body>
 </html>

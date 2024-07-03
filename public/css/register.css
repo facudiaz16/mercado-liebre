@@ -20,14 +20,20 @@
     padding: 5px;
     border: none;
 }
+.boton:hover{
+    background-color: blue;
+}
 
 .boton2{
     width: 30%;
     margin: auto;
-    background-color: red;
+    background-color: palevioletred;
     color: aliceblue;
     padding: 5px;
     border: none;
+}
+.boton2:hover{
+    background-color: red;
 }
 
 .estilo-label{
@@ -37,4 +43,28 @@
 .estilo-label > input{
     width: 100%;
     padding: 5px;
+}
+.error-contraseña,
+.error-contraseña2,
+.error-domicilio,
+.error-email,
+.error-name,
+.error-Username {
+    display: none;
+    font-size: 14px;
+    color: red;
+    text-align: center;
+}
+
+input:focus:invalid+.error-name,
+input:focus:invalid+.error-Username,
+input:focus:invalid+.error-contraseña,
+input:focus:invalid+.error-contraseña2,
+input:focus:invalid+.error-email,
+input:focus:invalid+.error-domicilio {
+    display: block;
+}
+
+input:focus:invalid {
+    border: solid 1px red;
 }

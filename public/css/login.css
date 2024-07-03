@@ -2,8 +2,13 @@
     width: 50%;
     padding: 5px;
     background-color:#1259c3;
+    opacity: 0.5;
     color: aliceblue;
     border: none;
+}
+.boton-enviar:hover{
+    background-color: #1259c3;
+    opacity: 1;
 }
 
 .estilo-input{
@@ -12,7 +17,7 @@
     border: none;
 }
 .caja-footer > section > i{
-    color: #1259c3; 
+    color: #1259c3;
     font-size: 2em; 
     margin-bottom: 10px;
     transition: all 0.5s;
